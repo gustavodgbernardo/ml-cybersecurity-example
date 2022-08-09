@@ -18,5 +18,7 @@ build: ## Builds all required containers
 	@docker build -t jupyter-notebook .
 
 jupyter: ## dev mode with rstudio
-	@docker run -it --rm -p 8888:8888 -v "${PWD}":/home/jovyan/ jupyter-notebook
+	@docker run -it --network host --rm -v "${PWD}":/home/jovyan/ jupyter-notebook
 
+flow: ## dev mode with rstudio
+	@docker run -it --network host --user root --rm -v "${PWD}":/home/jovyan/ jupyter-notebook python get-flow-nfstream.py

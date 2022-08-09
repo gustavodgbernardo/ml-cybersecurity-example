@@ -1,5 +1,5 @@
 # ml-cybersecurity-example
-Este projeto tem como objetivo fornecer um exemplo de uma aplicação de machine learning aplicado em cibersegurança.
+Este projeto tem como objetivo fornecer um exemplo de uma aplicação de machine learning em cibersegurança.
 
 ## Requerimentos 
 
